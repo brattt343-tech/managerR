@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق مساري الكروي - Football Path</title>
+    <meta name="theme-color" content="#2ecc71">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/33/33736.png">
+    
+    <style>
+        :root {
+            --primary: #2ecc71;
+            --dark: #1a1a1a;
+            --light: #f4f4f4;
+            --accent: #e74c3c;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            margin: 0;
+            padding-bottom: 50px;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+            background-size: cover;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .container { padding: 20px; }
+
+        .section-title {
+            color: var(--primary);
+            border-right: 5px solid var(--primary);
+            padding-right: 15px;
+            margin: 30px 0 15px;
+        }
+
+        .card {
+            background: #262626;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border-right: 4px solid transparent;
+            transition: 0.3s;
+        }
+
+        .card:hover { border-right-color: var(--primary); transform: scale(1.02); }
+
+        .video-link {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .video-link:hover { background: #27ae60; }
+
+        .pwa-install-btn {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 8px;
+            font-weight: bold;
+            display: none; /* سيظهر عند توفره */
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>تطبيق مساري الكروي ⚽</h1>
+    <p>من الصفر إلى الاحتراف - خطة الـ 365 يوماً</p>
+</header>
+
+<div class="container">
+    <button id="installBtn" class="pwa-install-btn">تثبيت التطبيق على جوالك</button>
+
+    <h2 class="section-title">1. القسم التقني (مهارات الكرة)</h2>
+    
+    <div class="card">
+        <h3>تمرين تمرير الجدار (Wall Pass)</h3>
+        <p>التركيز على اللمسة الأولى ودقة التمرير بباطن القدم (التكرار هو السر).</p>
+        <a href="https://www.youtube.com/watch?v=NCmi6i3U7Sg" class="video-link" target="_blank">مشاهدة التمرين المحدث 📺</a>
+    </div>
+
+    <div class="card">
+        <h3>السيطرة اللصيقة (Ball Mastery)</h3>
+        <p>تمارين في مساحات ضيقة لتطوير التحكم بالكرة بجميع أجزاء القدم.</p>
+        <a href="https://www.youtube.com/watch?v=52F_pL4391M" class="video-link" target="_blank">مشاهدة التمرين المحدث 📺</a>
+    </div>
+
+    <div class="card">
+        <h3>تقوية القدم الضعيفة</h3>
+        <p>تدريبات مخصصة لجعل قدمك غير الأساسية بنفس قوة الأساسية.</p>
+        <a href="https://www.youtube.com/watch?v=c7TlPG7vrz0" class="video-link" target="_blank">مشاهدة التمرين المحدث 📺</a>
+    </div>
+
+    <h2 class="section-title">2. القسم التكتيكي (الذكاء الميداني)</h2>
+
+    <div class="card">
+        <h3>المسح البصري (Scanning)</h3>
+        <p>تعلم كيف تصبح "لاعب رادار" يرى الملعب قبل استلام الكرة.</p>
+        <a href="https://www.youtube.com/watch?v=wfTM4BQjByg" class="video-link" target="_blank">شرح المسح البصري 📺</a>
+    </div>
+
+    <div class="card">
+        <h3>تمرين تفاعلي (Scanning Drill)</h3>
+        <p>استخدم هذا الفيديو أثناء تمرينك لتدريب عقلك على الاستجابة السريعة.</p>
+        <a href="https://www.youtube.com/watch?v=0CjZa672Nk4" class="video-link" target="_blank">بدء التمرين التفاعلي 📺</a>
+    </div>
+
+    <h2 class="section-title">3. القسم البدني والذهني</h2>
+
+    <div class="card">
+        <h3>حماية الكرة والالتحام (Shielding)</h3>
+        <p>كيف تستخدم جسمك كدرع لحماية الكرة من الخصم.</p>
+        <a href="https://www.youtube.com/watch?v=MkjLmW4tV-w" class="video-link" target="_blank">مشاهدة تكنيك الحماية 📺</a>
+    </div>
+
+    <div class="card">
+        <h3>الثبات والتركيز الذهني</h3>
+        <p>تطوير "عقلية البطل" والهدوء تحت الضغط العالي.</p>
+        <a href="https://www.youtube.com/watch?v=cWhbXEXoyWE" class="video-link" target="_blank">تدريب العقلية 📺</a>
+    </div>
+</div>
+
+<script>
+    // تسجيل الـ Service Worker لجعل التطبيق PWA
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            const blob = new Blob([`
+                self.addEventListener('install', (e) => {
+                    e.waitUntil(caches.open('pwa-soccer').then((c) => c.addAll(['/'])));
+                });
+                self.addEventListener('fetch', (e) => {
+                    e.respondWith(caches.match(e.request).then((res) => res || fetch(e.request)));
+                });
+            `], {type: 'application/javascript'});
+            const workerUrl = URL.createObjectURL(blob);
+            navigator.serviceWorker.register(workerUrl);
+        });
+    }
+
+    // منطق زر التثبيت
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        document.getElementById('installBtn').style.display = 'block';
+    });
+
+    document.getElementById('installBtn').addEventListener('click', () => {
+        if (deferredPrompt) {
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then((choice) => {
+                if (choice.outcome === 'accepted') document.getElementById('installBtn').style.display = 'none';
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
